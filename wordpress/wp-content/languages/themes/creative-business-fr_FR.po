@@ -1,0 +1,89 @@
+# Translation of Themes - Creative Business in French (France)
+# This file is distributed under the same license as the Themes - Creative Business package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-02-13 10:15:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - Creative Business\n"
+
+#. Theme Name of the theme
+msgid "Creative Business"
+msgstr "Creative Business"
+
+#: functions.php:236
+msgid "Demo & Documentation"
+msgstr "Démo et documentation"
+
+#. translators: 1: poweredby, 2: link, 3: span tag closed
+#: functions.php:338
+msgid "https://wordpress.org/"
+msgstr "https://fr.wordpress.org/"
+
+#. translators: 1: string, 2: url, 3: string
+#: functions.php:289 functions.php:305
+msgid "Click here"
+msgstr "Cliquez ici"
+
+#. translators: 1: string, 2: preview url, 3: string
+#. translators: 1: string, 2: documentation url, 3: string
+#: functions.php:251 functions.php:256
+msgid "Click here."
+msgstr "Cliquez ici."
+
+#. translators: 1: poweredby, 2: link, 3: span tag closed
+#: functions.php:338
+msgid " %1$sPowered by %2$s%3$s"
+msgstr " %1$s Propulsé par %2$s%3$s"
+
+#: functions.php:333
+msgid "Creative Business | Developed By "
+msgstr "Creative Business | Développé par "
+
+#: functions.php:308
+msgid "Rara One Click Demo Import"
+msgstr "Rara One Click Demo Import"
+
+#: functions.php:308
+msgid "Plugin required"
+msgstr "Extension nécessaire"
+
+#: functions.php:305
+msgid "Download Demo Content"
+msgstr "Télécharger le contenu de démo"
+
+#. translators: 1: string, 2: url, 3: string
+#: functions.php:289
+msgid "Creative Business comes with demo content import feature. You can import the demo content with just one click. For step-by-step video tutorial, "
+msgstr "Creative Business est livré avec la fonction d’importation de contenu de démonstration. Vous pouvez importer le contenu de la démo en un seul clic. Pour un tutoriel vidéo étape par étape,"
+
+#: functions.php:277
+msgid "Demo Content Import"
+msgstr "Import de contenu de démo"
+
+#. translators: 1: string, 2: documentation url, 3: string
+#: functions.php:256
+msgid "Documentation Link : "
+msgstr "Lien de documentation : "
+
+#. translators: 1: string, 2: preview url, 3: string
+#: functions.php:251
+msgid "Demo Link : "
+msgstr "Lien de démo : "
+
+#. Author URI of the theme
+msgid "https://rarathemes.com/"
+msgstr "https://rarathemes.com/"
+
+#. Author of the theme
+#: functions.php:334
+msgid "Rara Theme"
+msgstr "Rara Theme"
+
+#. Theme URI of the theme
+msgid "https://rarathemes.com/wordpress-themes/creative-business/"
+msgstr "https://rarathemes.com/wordpress-themes/creative-business/"

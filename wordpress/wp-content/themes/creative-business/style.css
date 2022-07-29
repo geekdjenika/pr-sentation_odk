@@ -1,0 +1,1289 @@
+/*!
+Theme Name: Creative Business
+Theme URI: https://rarathemes.com/wordpress-themes/creative-business/
+Author: Rara Theme
+Author URI: https://rarathemes.com/
+Description: Creative Business is a child theme of Rara Business Free WordPress Theme. You can create a clean, attractive, and professional websites with this theme without writing a single line of code. This theme features multiple sections on the homepage like services, about us, why choose us, testimonials, stats, team, etc. to help you showcase different aspects of your business. It is an easy to use theme and comes with multiple features and customization options to help you design your dream website. The attractive and optimized UX of this theme can be highly beneficial in acquiring new customers for your business. Also, the performance optimized features of this theme help your website load in no time giving your visitors the best user experience while browsing your site. The theme is SEO friendly along with Schema.org mark up ready to help your website rank at the top of search engine results. If your business, firm, or company an online home that is dynamic and multi-functional, this theme is an excellent option to start. Check demo at https://rarathemes.com/previews/?theme=creative-business, read the documentation at https://docs.rarathemes.com/docs/creative-business/, and get support at https://rarathemes.com/support-ticket/.
+Version: 1.0.6
+Requries PHP: 5.6
+Tested up to: 5.8
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: rara-business
+Text Domain: creative-business
+Tags: two-columns, left-sidebar, right-sidebar, custom-header, custom-background, custom-logo, custom-menu, theme-options, featured-images, threaded-comments, full-width-template, footer-widgets, translation-ready, blog, e-commerce, portfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Creative Business is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+:root {
+  --primary-color: #588af0;
+  --secondary-color: #2ac59f;
+  --primary-color-rgb: 88, 138, 240;
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Source Sans Pro", sans-serif;
+  --font-color: #595f5f;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.65em;
+  font-weight: 400;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  font-family: var(--primary-font);
+  color: var(--font-color);
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-color: var(--primary-color);
+  color: #fff;
+  background: var(--primary-color);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: thin dotted #000;
+}
+
+.site-branding .site-title,
+.main-navigation ul,
+#primary .site-main article .entry-header .entry-title,
+.page-header .page-title,
+.error-holder .text-holder h2,
+.error404 .recent-post .section-title,
+.error404 .recent-post .col .entry-title,
+#primary .post .entry-footer .social-share strong,
+.author-section .text-holder .name,
+.related-post .section-title,
+.related-post .col .entry-title,
+.popular-post .section-title,
+.popular-post .col .entry-title,
+.comments-area .comments-title,
+.comments-area .comment-body .fn,
+.comments-area .comment-reply-title,
+.banner .banner-text .text-holder .title,
+.our-services .widget_text .widget-title,
+.our-services .grid .widget .widget-title,
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .widget-title,
+.our-features .widget.widget_text .widget-title,
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .widget-title,
+.our-team .widget_text .widget-title,
+.our-team .widget_rrtc_description_widget .text-holder .name,
+.our-testimonial .section-header .widget_text .widget-title,
+.our-testimonial .grid .widget_rrtc_testimonial_widget .text-holder .testimonial-meta .name,
+.our-stats .widget_text .widget-title,
+.our-stats .widget_raratheme_companion_stat_counter_widget .hs-counter,
+.portfolio .widget_text .widget-title,
+.blog-section .widget_text .widget-title,
+.blog-section .blog-post .entry-title,
+.our-skills .text-holder .title,
+.portfolio-holder .button-group .button,
+.portfolio-holder .filter-grid .element-item .img-holder .text-holder .text .title,
+.our-pricing .widget_text .widget-title,
+.our-pricing .pricing-holder .col h3,
+.our-pricing .pricing-holder .col .price-holder,
+.cta .widget .widget-title,
+.cta .widget .btn-cta,
+.faq-section .widget_text .widget-title,
+.faq-section .widget .accordion li .toggle,
+.contact-section .widget_text .widget-title,
+.our-clients .widget .widget-title,
+.contact-grid .right .contact-info h3,
+.page-template-faq .widget_raratheme_companion_faqs_widget .accordion li .toggle,
+.team-grid .widget_rrtc_description_widget .text-holder .name,
+.testimonial-grid .widget_rrtc_testimonial_widget .text-holder .testimonial-meta .name {
+  font-family: var(--secondary-font);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted #000;
+}
+
+.site-header .header-t {
+  padding: 0;
+}
+
+.site-header .header-t .container:after {
+  display: none;
+}
+
+.site-header .header-t .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .header-t .btn-buy {
+  background: var(--primary-color);
+  padding: 10px 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.889em;
+  -webkit-transition: ease 0.2s;
+  -moz-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.site-header .header-t .btn-buy:hover,
+.site-header .header-t .btn-buy:focus {
+  text-decoration: none;
+  background: var(--secondary-color);
+}
+
+.site-header .header-t .btn-buy svg {
+  margin-right: 5px;
+}
+
+.site-branding {
+  align-items: center;
+}
+
+.site-branding .site-title {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.site-title a:hover,
+.site-title a:focus {
+  text-decoration: none;
+}
+
+.site-branding .site-description {
+  font-size: 0.779em;
+  line-height: 1.111em;
+}
+
+.site-header .header-t a {
+  color: #fff;
+}
+
+.site-header .header-t .social-networks li a:hover,
+.site-header .header-t .social-networks li a:focus,
+.homepage.hasbanner .site-header .header-t .social-networks li a:hover,
+.homepage.hasbanner .site-header .header-t .social-networks li a:focus {
+  color: var(--primary-color);
+}
+
+@media only screen and (min-width: 1025px) {
+  .main-navigation ul {
+    font-size: 0.889em;
+  }
+
+  .main-navigation ul ul li a:hover,
+  .main-navigation ul ul li a:focus,
+  .main-navigation ul ul li:hover>a,
+  .main-navigation ul ul li:focus>a,
+  .main-navigation ul ul .current-menu-item>a,
+  .main-navigation ul ul .current-menu-ancestor>a,
+  .main-navigation ul ul .current_page_item>a,
+  .main-navigation ul ul .current_page_ancestor>a {
+    color: var(--primary-color);
+  }
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a:focus {
+  text-decoration: none;
+}
+
+.homepage.hasbanner .main-navigation ul ul li a:hover,
+.homepage.hasbanner .main-navigation ul ul li a:focus,
+.homepage.hasbanner .main-navigation ul ul li:hover>a,
+.homepage.hasbanner .main-navigation ul ul li:focus>a,
+.homepage.hasbanner .main-navigation ul ul .current-menu-item>a,
+.homepage.hasbanner .main-navigation ul ul .current-menu-ancestor>a,
+.homepage.hasbanner .main-navigation ul ul .current_page_item>a,
+.homepage.hasbanner .main-navigation ul ul .current_page_ancestor>a {
+  color: var(--primary-color);
+}
+
+.banner .banner-text .btn-holder .btn-free-inquiry {
+  background: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.banner .banner-text .btn-holder .btn-free-inquiry:hover,
+.banner .banner-text .btn-holder .btn-free-inquiry:focus {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.banner .banner-text .btn-holder .btn-view-service {
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.banner .banner-text .btn-holder .btn-view-service:hover,
+.banner .banner-text .btn-holder .btn-view-service:focus {
+  background: var(--secondary-color);
+}
+
+.banner .banner-text .text-holder {
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+.banner {
+  background: #000;
+}
+
+.our-services {
+  margin: 5% 0 0;
+}
+
+.our-services .widget_text .textwidget {
+  font-size: 1em;
+  line-height: 1.65em;
+  letter-spacing: 0;
+}
+
+.our-services .grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 0;
+}
+
+.our-services .grid .widget {
+  width: 33.333%;
+  padding: 0;
+}
+
+.our-services .grid .widget_text {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+/*.our-services .grid .widget_rrtc_icon_text_widget{
+    margin: 0 0 60px;
+}*/
+
+.our-services .grid .widget_rrtc_icon_text_widget .rtc-itw-holder {
+  padding: 0 15px;
+  height: 100%;
+}
+
+.our-services .grid .widget_rrtc_icon_text_widget .rtc-itw-inner-holder {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  grid-row-gap: 0;
+  height: 100%;
+  border-radius: 8px;
+  padding: 40px;
+  -webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.our-services .grid .widget_rrtc_icon_text_widget:hover .rtc-itw-inner-holder,
+.our-services .grid .widget_rrtc_icon_text_widget:focus .rtc-itw-inner-holder {
+  box-shadow: 2.5px 4.33px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.our-services .grid .widget .icon-holder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  margin: 0 auto 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-services .grid .widget .icon-holder svg {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.our-services .grid .widget .btn-readmore {
+  border-color: var(--primary-color);
+  color: #fff;
+  background: var(--primary-color);
+  font-weight: 600;
+  padding: 10px 32px;
+  border-radius: 100px;
+  letter-spacing: 1px;
+}
+
+.our-services .grid .widget .btn-readmore:hover,
+.our-services .grid .widget .btn-readmore:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.our-services .grid .widget .btn-readmore:focus {
+  outline: thin dotted #000;
+  outline-offset: 2px;
+}
+
+.our-services .grid .widget .content {
+  margin: 0 0 20px;
+  font-size: 0.9em;
+  line-height: 1.85em;
+  margin: 0;
+}
+
+.our-services .grid .widget .content p {
+  margin: 0;
+}
+
+.our-services .grid .widget_rrtc_icon_text_widget .widget-title {
+  font-size: 1.25em;
+}
+
+.featured-page {
+  background: none;
+  padding: 0;
+  margin: 5% 0 0;
+}
+
+.featured-page .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 0 0 65px;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .section-subtitle {
+  display: none;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .img-holder {
+  margin: 0;
+  box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 40%;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .img-holder a:focus {
+  outline: thin dotted #000;
+  outline-offset: 2px;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .img-holder img {
+  border-radius: 10px;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder {
+  background: #f6f5fb;
+  padding: 10% 10% 10% 17%;
+  margin-left: -12%;
+  border-radius: 10px 0 0 10px;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content {
+  line-height: 1.85em;
+  font-size: 1em;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content .btn-readmore {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content .btn-readmore:hover,
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content .btn-readmore:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content .btn-readmore:focus {
+  outline: thin dotted #000;
+  outline-offset: 2px;
+}
+
+.our-features {
+  padding: 0;
+  margin: 5% 0 0;
+  border-bottom: 0;
+}
+
+.our-features .widget_text .textwidget {
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1.85em;
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .content {
+  line-height: 1.85em;
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder {
+  flex-direction: column-reverse;
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .icon-holder {
+  width: 50px;
+  height: 50px;
+  background: var(--secondary-color);
+  color: #fff;
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .icon-holder svg {
+  color: #fff;
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .btn-readmore {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .btn-readmore:hover,
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .btn-readmore:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .btn-readmore:focus {
+  outline: thin dotted #000;
+}
+
+.our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .widget-title {
+  margin: 0 0 10px;
+}
+
+.our-clients {
+  margin: 5% 0 0;
+  padding: 5% 0;
+  background: rgba(var(--primary-color-rgb), 0.05);
+}
+
+.our-clients .widget .raratheme-client-logo-inner-holder {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: inherit;
+  grid-gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-clients .widget .widget-title {
+  width: 100%;
+}
+
+.our-clients .widget .image-holder {
+  width: 25%;
+  margin: 0 0 30px;
+}
+
+.our-clients .widget .image-holder a {
+  padding: 0 15px;
+}
+
+.our-testimonial .grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: inherit;
+  grid-gap: 0;
+}
+
+.our-testimonial {
+  margin: 5% 0 0;
+}
+
+.our-testimonial .widget.widget_text {
+  max-width: 100%;
+  margin: 0 0 70px;
+  width: 100%;
+}
+
+.our-testimonial .widget.widget_text .widget-title {
+  max-width: 830px;
+  margin: 0 auto 15px;
+}
+
+.our-testimonial .widget.widget_text .textwidget {
+  max-width: 830px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.85em;
+}
+
+.our-testimonial .widget_rrtc_testimonial_widget {
+  width: 50%;
+  margin: 0 0 70px;
+  -webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.our-testimonial .widget_rrtc_testimonial_widget .testimonial-content {
+  padding: 0;
+  border: 0;
+  line-height: 1.85em;
+  display: block;
+}
+
+.our-testimonial .widget_rrtc_testimonial_widget .rtc-testimonial-holder {
+  padding: 0 15px;
+}
+
+.our-testimonial .widget_rrtc_testimonial_widget .rtc-testimonial-inner-holder {
+  /*border: 1px solid #ececec;*/
+  border-radius: 8px;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 50px 30px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.05);
+}
+
+.widget_rrtc_testimonial_widget .text-holder .testimonial-meta {
+  padding: 0;
+}
+
+.our-testimonial .widget_rrtc_testimonial_widget .img-holder {
+  margin: 0 0 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.our-testimonial .widget_rrtc_testimonial_widget .text-holder {
+  flex-direction: column;
+  align-items: center;
+  margin: -40px 0 16px;
+}
+
+.our-stats {
+  background: rgba(var(--primary-color-rgb), 0.05);
+  padding: 5% 0;
+  margin: 5% 0 0;
+}
+
+.our-stats .widget.widget_text .textwidget {
+  line-height: 1.85em;
+  font-size: 1em;
+}
+
+.our-stats .widget_raratheme_companion_stat_counter_widget .hs-counter {
+  color: var(--secondary-color);
+}
+
+.our-stats .widget_raratheme_companion_stat_counter_widget .raratheme-sc-holder .icon-holder,
+.our-stats .widget_raratheme_companion_stat_counter_widget .raratheme-sc-holder .image-holder {
+  color: var(--secondary-color);
+}
+
+.our-team {
+  margin: 5% 0 0;
+}
+
+.our-team .grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: inherit;
+  grid-gap: 0;
+}
+
+.our-team .widget.widget_text {
+  width: 100%;
+  max-width: 100%;
+  grid-column: inherit;
+  margin: 0 0 80px;
+}
+
+.our-team .widget.widget_text .widget-title {
+  max-width: 830px;
+  margin: 0 auto 15px;
+}
+
+.our-team .widget.widget_text .textwidget {
+  max-width: 830px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.85em;
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder {
+  background: #fff;
+  color: var(--font-color);
+}
+
+.our-team .widget_rrtc_description_widget .social-profile li a {
+  color: #999;
+}
+
+.our-team .widget_rrtc_description_widget {
+  width: 33.333%;
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder {
+  padding: 0 15px;
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder .rtc-team-inner-holder {
+  border: 1px solid #dbdee5;
+  border-radius: 8px;
+  -webkit-transition: ease 0.35s;
+  -moz-transition: ease 0.35s;
+  transition: ease 0.35s;
+}
+
+.our-team .widget_rrtc_description_widget:hover .rtc-team-inner-holder,
+.our-team .widget_rrtc_description_widget:focus .rtc-team-inner-holder {
+  box-shadow: 2.5px 4.33px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder .text-holder {
+  padding: 30px 30px 40px;
+  position: relative;
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder .text-holder:after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  border-bottom: 1px solid #dbdee5;
+  width: calc(100% - 60px);
+  height: 1px;
+  transform: translateX(-50%);
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder .social-profile {
+  padding-bottom: 15px;
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder .social-profile li {
+  font-size: 0.6em;
+  margin: 0 5px 10px;
+  padding: 0;
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder .social-profile li a:hover,
+.our-team .widget_rrtc_description_widget .rtc-team-holder .social-profile li a:focus {
+  color: var(--primary-color);
+}
+
+.our-team .widget_rrtc_description_widget .rtc-team-holder .social-profile li a:focus {
+  outline: thin dotted #000;
+}
+
+.our-team .widget_rrtc_description_widget .text-holder .designation {
+  font-size: 0.7em;
+  color: #999;
+}
+
+.our-team .widget_rrtc_description_widget .text-holder .name {
+  margin: 0 0 10px;
+}
+
+.our-team .widget_rrtc_description_widget .text-holder .description {
+  font-size: 0.9em;
+  line-height: 1.85em;
+  height: inherit;
+}
+
+.blog-section {
+  padding: 0;
+  margin: 5% 0 0;
+}
+
+.blog-section .section-header .widget_text .textwidget {
+  font-size: 1em;
+  line-height: 1.85em;
+}
+
+.blog-section .grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: inherit;
+  grid-gap: 0;
+}
+
+.blog-section .grid .blog-post {
+  width: 33.333%;
+}
+
+.blog-section .grid .blog-post .text-holder {
+  padding: 0 15px;
+  height: 100%;
+}
+
+.blog-section .grid .blog-post .post-thumbnail {
+  margin: 0;
+}
+
+.blog-section .grid .blog-post .post-thumbnail img {
+  border-radius: 8px 8px 0 0;
+}
+
+.blog-section .grid .blog-post .article-holder {
+  border: 1px solid #dbdee5;
+  border-radius: 0 0 8px 8px;
+  border-top: 0;
+  padding: 30px 20px;
+  flex-grow: 1;
+}
+
+.blog-section .grid .blog-post .article-holder p {
+  font-size: 0.9em;
+  line-height: 1.85em;
+}
+
+.blog-section .grid .blog-post .holder {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  -webkit-transition: ease 0.35s;
+  -moz-transition: ease 0.35s;
+  transition: ease 0.35s;
+}
+
+.blog-section .grid .blog-post:hover .holder,
+.blog-section .grid .blog-post:focus .holder {
+  box-shadow: 2.5px 4.33px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.blog-section .blog-post .entry-meta {
+  font-size: 0.8em;
+  margin: 0 0 5px;
+}
+
+.blog-section .blog-post .entry-meta a:hover,
+.blog-section .blog-post .entry-meta a:focus {
+  color: var(--primary-color);
+}
+
+.blog-section .blog-post .entry-title a:hover,
+.blog-section .blog-post .entry-title a:focus {
+  color: var(--primary-color);
+}
+
+.blog-section .blog-more {
+  text-align: center;
+}
+
+.blog-section .blog-more .btn-readmore {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.blog-section .blog-more .btn-readmore:hover,
+.blog-section .blog-more .btn-readmore:focus {
+  text-decoration: none;
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.portfolio {
+  margin: 5% 0 0;
+}
+
+.portfolio .widget.widget_text .textwidget {
+  font-size: 1em;
+  line-height: 1.85em;
+}
+
+.portfolio-holder .button-group .button:after {
+  background: var(--primary-color);
+  display: none;
+}
+
+.portfolio-holder .button-group .button.is-checked,
+.portfolio-holder .button-group .button:hover,
+.portfolio-holder .button-group .button:focus {
+  color: #fff;
+  background: var(--secondary-color);
+  outline: none;
+}
+
+.portfolio-holder .button-group .button:focus {
+  outline: thin dotted #000;
+  outline-offset: 2px;
+}
+
+.portfolio-holder img {
+  border-radius: 8px;
+}
+
+.portfolio-holder .filter-grid .element-item .img-holder .text-holder {
+  border-radius: 8px;
+  background: rgba(var(--primary-color-rgb), 0.9);
+}
+
+.portfolio-holder .button-group .button {
+  padding: 5px 30px;
+  margin: 0 5px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  background: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.cta {
+  margin: 5% 0 0;
+}
+
+.cta .widget_raratheme_companion_cta_widget .text,
+.cta .widget_raratheme_companion_cta_widget .bttk-cta-bg {
+  padding: 5% 0;
+}
+
+.cta .widget .text-holder {
+  font-size: 1em;
+  line-height: 1.85em;
+}
+
+.cta .widget .btn-cta {
+  font-size: 1em;
+  padding: 20px 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cta .widget .button-wrap {
+  margin: 60px 0 0;
+}
+
+.faq-section {
+  padding: 0;
+  margin: 5% 0;
+  border-bottom: 0;
+}
+
+.faq-section .widget.widget_text .textwidget {
+  font-size: 1em;
+  line-height: 1.85em;
+}
+
+#primary .post .entry-header .entry-meta a:hover,
+#primary .post .entry-header .entry-meta a:focus,
+#primary .site-main article .entry-header .entry-title a:hover,
+#primary .site-main article .entry-header .entry-title a:focus {
+  color: var(--primary-color);
+}
+
+#primary .site-main article .entry-footer .btn-readmore {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#primary .site-main article .entry-footer .btn-readmore:hover,
+#primary .site-main article .entry-footer .btn-readmore:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.pagination a:hover,
+.pagination a:focus,
+.pagination .current {
+  border-color: var(--secondary-color);
+  background: var(--secondary-color);
+  text-decoration: none;
+}
+
+.widget ul li a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.widget_rtc_social_links .rtc-social-icon-wrap a:hover,
+.widget_rtc_social_links .rtc-social-icon-wrap a:focus {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.site-footer {
+  background: var(--primary-color);
+}
+
+.footer-t .widget ul li a:hover,
+.footer-t .widget ul li a:focus {
+  color: #000;
+}
+
+.footer-t .widget ul li a {
+  -webkit-transition: ease 0.2s;
+  -moz-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+#crumbs a:hover,
+#crumbs a:focus {
+  color: var(--primary-color);
+}
+
+.error404 .recent-post .col .entry-meta {
+  font-size: 0.8em;
+}
+
+.error-holder .text-holder .btn-home {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.error-holder .text-holder .btn-home:hover,
+.error-holder .text-holder .btn-home:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.error404 .recent-post .col .entry-title a:hover,
+.error404 .recent-post .col .entry-title a:focus,
+.error404 .recent-post .col .entry-meta a:hover,
+.error404 .recent-post .col .entry-meta a:focus {
+  color: var(--primary-color);
+}
+
+.post-navigation .nav-links div a:hover,
+.post-navigation .nav-links div a:focus {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.related-post .col .entry-title,
+.popular-post .col .entry-title {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.related-post .col .entry-title a:hover,
+.related-post .col .entry-title a:focus,
+.popular-post .col .entry-title a:hover,
+.popular-post .col .entry-title a:focus {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.widget_raratheme_companion_faqs_widget .accordion .inner {
+  word-break: normal;
+}
+
+.widget_raratheme_image_widget .readmore {
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  -webkit-transition: ease 0.2s;
+  -moz-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.widget_raratheme_image_widget .readmore:hover,
+.widget_raratheme_image_widget .readmore:focus {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.comments-area .comment-body .reply a:hover,
+.comments-area .comment-body .reply a:focus,
+.comments-area .comment-body .comment-metadata a:hover,
+.comments-area .comment-body .comment-metadata a:focus,
+.comments-area .comment-body .fn a:hover,
+.comments-area .comment-body .fn a:focus {
+  color: var(--primary-color);
+}
+
+.widget_calendar .wp-calendar-nav {
+  border-color: #0aa3f3;
+}
+
+.widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev {
+  border-color: #0aa3f3;
+}
+
+.widget_calendar .wp-calendar-nav span.wp-calendar-nav-next {
+  border-color: #0aa3f3;
+}
+
+@media only screen and (max-width: 1024px) {
+  #primary-toggle-button span {
+    background: var(--primary-color);
+  }
+
+  .site-header .social-networks {
+    margin: 0;
+    font-size: 0.9em;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .site-header .header-t .container {
+    justify-content: inherit;
+  }
+
+  .site-header .header-t .inquiry-btn {
+    margin-right: 15px;
+  }
+
+  .site-header .responsive-menu-holder .social-networks-holder {
+    padding: 15px 20px;
+  }
+
+  .main-navigation {
+    width: 100%;
+  }
+
+  .responsive-menu-holder {
+    background: var(--primary-color);
+  }
+
+  .site-header .header-t .responsive-menu-holder .btn-buy {
+    background: #fff;
+    border-color: #fff;
+    color: var(--primary-color) !important;
+  }
+
+  .site-header .header-t .responsive-menu-holder .btn-buy:hover,
+  .site-header .header-t .responsive-menu-holder .btn-buy:focus {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff !important;
+  }
+
+  .our-services .grid {
+    justify-content: center;
+  }
+
+  .our-services .grid .widget {
+    width: 50%;
+  }
+
+  .our-services .grid .widget_text {
+    width: 100%;
+  }
+
+  .our-team .grid {
+    justify-content: center;
+  }
+
+  .our-team .widget_rrtc_description_widget {
+    width: 50%;
+    margin: 0 0 30px;
+  }
+
+  .blog-section .grid {
+    justify-content: center;
+  }
+
+  .blog-section .grid .blog-post {
+    width: 50%;
+    margin: 0 0 30px;
+  }
+
+  .site-header .header-t {
+    padding: 5px 0;
+  }
+
+  .responsive-menu-holder .mobile-navigation .primary-menu-list .close-main-nav-toggle {
+    color: var(--primary-color);
+    border: var(--primary-color);
+  }
+}
+
+.page .content-area a:hover,
+.single-post .entry-content a:hover {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 991px) {
+  .featured-page .container {
+    padding: 0;
+  }
+
+  .featured-page .widget_raratheme_featured_page_widget .widget-featured-holder {
+    flex-direction: column-reverse;
+  }
+
+  .featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder {
+    margin-left: 0;
+  }
+
+  .featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .img-holder {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .our-services .grid .widget {
+    width: 100%;
+  }
+
+  .our-testimonial .widget_rrtc_testimonial_widget {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .our-testimonial .widget_rrtc_testimonial_widget .rtc-testimonial-inner-holder {
+    padding: 0 10px 30px;
+  }
+
+  .our-team .widget_rrtc_description_widget {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .blog-section .grid .blog-post {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .banner img {
+    height: 820px;
+  }
+
+  .our-team .widget_rrtc_description_widget .image-holder img,
+  .blog-section .grid .blog-post .post-thumbnail img {
+    width: 100%;
+  }
+
+  .our-services,
+  .featured-page,
+  .our-features,
+  .our-clients,
+  .our-testimonial,
+  .our-stats,
+  .our-team,
+  .blog-section,
+  .portfolio,
+  .cta {
+    margin: 10% 0 0;
+  }
+
+  .our-clients,
+  .our-stats {
+    padding: 10% 0;
+  }
+
+  .faq-section {
+    margin: 10% 0;
+  }
+
+  .cta .widget_raratheme_companion_cta_widget .text,
+  .cta .widget_raratheme_companion_cta_widget .bttk-cta-bg {
+    padding: 10% 0;
+  }
+
+  .widget_raratheme_companion_stat_counter_widget .raratheme-sc-holder {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive-menu-holder .mobile-navigation .primary-menu-list .close-main-nav-toggle {
+    top: 0px;
+  }
+
+  .our-clients .widget .image-holder {
+    width: 50%;
+  }
+
+  .site-header .header-t .inquiry-btn {
+    display: none;
+  }
+
+  .banner .banner-text {
+    top: 25%;
+  }
+}
+
+
+/* Underline fixes */
+.entry-content a,
+.entry-summary a,
+.page-content a,
+.comment-content a,
+.widget .textwidget a {
+  color: var(--font-color);
+	text-decoration: underline;
+}
+.entry-content a:hover,
+.entry-summary a:hover,
+.page-content a:hover,
+.comment-content a:hover,
+.widget .textwidget a:hover {
+  color: var(--primary-color);
+	text-decoration: underline;
+}

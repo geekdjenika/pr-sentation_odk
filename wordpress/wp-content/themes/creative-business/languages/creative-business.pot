@@ -1,0 +1,149 @@
+# <!=Copyright (C) 2021 Rara Theme
+# This file is distributed under the GNU General Public License v3 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Business 1.0.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/creative-business\n"
+"POT-Creation-Date: 2021-07-21 12:40:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: functions.php:158
+msgid "Mobile"
+msgstr ""
+
+#: functions.php:236
+msgid "Demo & Documentation"
+msgstr ""
+
+#: functions.php:251
+#. translators: 1: string, 2: preview url, 3: string
+msgid "Demo Link : "
+msgstr ""
+
+#: functions.php:251
+msgid "https://rarathemes.com/previews/?theme=creative-business"
+msgstr ""
+
+#: functions.php:251 functions.php:256
+msgid "Click here."
+msgstr ""
+
+#: functions.php:256
+#. translators: 1: string, 2: documentation url, 3: string
+msgid "Documentation Link : "
+msgstr ""
+
+#: functions.php:277
+msgid "Demo Content Import"
+msgstr ""
+
+#: functions.php:289
+#. translators: 1: string, 2: url, 3: string
+msgid ""
+"Creative Business comes with demo content import feature. You can import "
+"the demo content with just one click. For step-by-step video tutorial, "
+msgstr ""
+
+#: functions.php:289 functions.php:305
+msgid "Click here"
+msgstr ""
+
+#: functions.php:305
+msgid "Download Demo Content"
+msgstr ""
+
+#: functions.php:308
+msgid "Plugin required"
+msgstr ""
+
+#: functions.php:308
+msgid "Rara One Click Demo Import"
+msgstr ""
+
+#: functions.php:333
+msgid "Creative Business | Developed By "
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Rara Theme"
+msgstr ""
+
+#: functions.php:338
+#. translators: 1: poweredby, 2: link, 3: span tag closed
+msgid " %1$sPowered by %2$s%3$s"
+msgstr ""
+
+#: functions.php:338
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: sections/blog.php:74
+msgid "View All Blog"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Creative Business"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://rarathemes.com/wordpress-themes/creative-business/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Creative Business is a child theme of Rara Business Free WordPress Theme. "
+"You can create a clean, attractive, and professional websites with this "
+"theme without writing a single line of code. This theme features multiple "
+"sections on the homepage like services, about us, why choose us, "
+"testimonials, stats, team, etc. to help you showcase different aspects of "
+"your business. It is an easy to use theme and comes with multiple features "
+"and customization options to help you design your dream website. The "
+"attractive and optimized UX of this theme can be highly beneficial in "
+"acquiring new customers for your business. Also, the performance optimized "
+"features of this theme help your website load in no time giving your "
+"visitors the best user experience while browsing your site. The theme is "
+"SEO friendly along with Schema.org mark up ready to help your website rank "
+"at the top of search engine results. If your business, firm, or company an "
+"online home that is dynamic and multi-functional, this theme is an "
+"excellent option to start. Check demo at "
+"https://rarathemes.com/previews/?theme=creative-business, read the "
+"documentation at https://docs.rarathemes.com/docs/creative-business/, and "
+"get support at https://rarathemes.com/support-ticket/."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://rarathemes.com/"
+msgstr ""
+
+#: functions.php:44
+#. Translators: If there are characters in your language that are not supported
+#. by Open Sans fonts, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:51
+#. Translators: If there are characters in your language that are not supported
+#. by Source Sans Pro fonts, translate this to 'off'. Do not translate into
+#. your own language.
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr ""
